@@ -641,7 +641,8 @@ function poster() {
   s += `<div class="p-place" style="left:${cx}px;top:4000px;width:${cw}px">${esc(D.place)}</div>`;
   s += `<div class="p-place-en" style="left:${cx}px;top:4200px;width:${cw}px">SANXING · BINZHOU · TIANXIN · CHANGSHA</div>`;
 
-  s += `<div class="p-foot" style="left:${M}px;top:${holeY + 400}px;width:${W - M * 2}px">设计提案 · 未与村集体签署协议 · 米数为实测方式示意</div>`;
+  s += `<div class="p-foot" style="left:${M}px;top:${holeY + 380}px;width:${W - M * 2}px">设计提案 · 未与村集体签署协议 · 米数为实测方式示意</div>`;
+  s += `<div class="p-src" style="left:${M}px;top:${holeY + 430}px;width:${W - M * 2}px">数据来源：村情与短板——《第二届乡村新消费暨 OPC 创新实践大赛》命题公告｜奥体一场两馆、2028 竣工、2029 十六运——长沙晚报 2026-12-03｜收菜与取菜时刻、月增收约 700 元、15 个小区团购群——湖南日报 2024-01-23、星辰在线 2024-01-07｜2027 年开工 33 个项目——天心区政府网站 2026-09</div>`;
   return {
     html: `<div class="page">${s}</div>`,
     checks: [
@@ -788,6 +789,7 @@ const CSS = `
   .p-place{position:absolute;font-family:"Noto Serif SC",serif;font-weight:600;font-size:76px;line-height:1.36;letter-spacing:.04em}
   .p-place-en{position:absolute;font-size:24px;letter-spacing:.34em;opacity:.55}
   .p-foot{position:absolute;text-align:center;font-size:30px;letter-spacing:.28em;opacity:.7}
+  .p-src{position:absolute;font-size:22px;line-height:1.75;opacity:.55;letter-spacing:.02em}
 `;
 
 function page(body) {
